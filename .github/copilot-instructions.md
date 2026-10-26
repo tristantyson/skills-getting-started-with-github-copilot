@@ -11,7 +11,7 @@
 
 - Install runtime dependencies with `python -m pip install -r requirements.txt`.
 - Run the app from the repository root with `python -m uvicorn src.app:app --reload --reload-include 'src/static/*'`.
-- Backend tests belong in a top-level `tests/` directory and use pytest with FastAPI's `TestClient`. Both pytest and `httpx` are listed in `requirements.txt`.
+- Backend tests live in the top-level `tests/` directory and use pytest with FastAPI's `TestClient`. Both pytest and `httpx` are listed in `requirements.txt`.
 - Run the suite with `python -m pytest`.
 - Run one test with `python -m pytest tests/test_app.py::test_name`.
 - `pytest.ini` adds the repository root to `pythonpath`, so tests can import the app as `from src.app import app`.
